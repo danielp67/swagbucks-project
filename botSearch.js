@@ -75,5 +75,7 @@ function searchManyWords(nb)
 }
 
 searchButton.addEventListener('click', () => {
-    nIntervId = setInterval(()=> {searchManyWords(nb)}, 2000);
+    console.log("click")
+
+  //  nIntervId = setInterval(()=> {searchManyWords(nb)}, 2000);
 })

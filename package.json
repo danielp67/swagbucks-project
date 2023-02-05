@@ -8,9 +8,9 @@
   "name": "swagbucks-project",
   "version": "1.0.0",
   "description": "Swagbucks project",
-  "main": "/public/app.js",
-  "devDependencies": {},
+  "main": "/app.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
