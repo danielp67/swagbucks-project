@@ -47,7 +47,7 @@ let url = "https://www.swagbucks.com/?q="
 
 let nIntervId;
 let count = 0
-let nb = 5
+let nb = 50
 
 function openInNewTab(url) {
     console.log(url)
@@ -64,8 +64,8 @@ function searchManyWords(nb)
 {
         let j = Math.floor(Math.random()*297)
         let h = Math.floor(Math.random()*297)
-    openInNewTab(url + dbNoms[j] + "+" + dbVerbes[h])
-   // openInNewTab(url + db[j])
+   // openInNewTab(url + dbNoms[j] + "+" + dbVerbes[h])
+    openInNewTab(url + dbVerbes[j])
     count++
 
     if(count===nb)
@@ -77,5 +77,5 @@ function searchManyWords(nb)
 searchButton.addEventListener('click', () => {
     console.log("click")
 
-  //  nIntervId = setInterval(()=> {searchManyWords(nb)}, 2000);
+    nIntervId = setInterval(()=> {searchManyWords(nb)}, 2000);
 })

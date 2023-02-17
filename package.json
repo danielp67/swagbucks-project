@@ -10,7 +10,7 @@
   "description": "Swagbucks project",
   "main": "/app.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "set NODE_ENV=dev && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
